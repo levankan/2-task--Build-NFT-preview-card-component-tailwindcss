@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | NFT preview card component</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                dark1: '#15263F',
+                blue2: '#8BACD9',
+                lightBlue: '#00FFF8',
+                soft: '#8BACD9',
+                linecolor: '#2E405A',
+                bodycolor: '#0D192C',
+              }
+            }
+          }
+        }
+        module.exports = {
+           theme: {
+            extend: {
+             height: {
+              '350': '22rem',
+              '596': '37rem',
+              '302': '19rem',
+              '24' : '1.5rem',
+              '22' : '1.4rem',
+              '302' : '18.8rem',
+              '52' : '3.25rem',
+              '16' : '1rem',
+              '75' : '4.65rem',
+              '20' : '1.25rem',
+              '73' : '4.56rem',
+              '10' : '0.62rem',
+              '134.52' : '7.0rem',
+              '134.52' : '2.75rem',
+              '33': '2.06rem',
+              '81': '5.06rem',
+              '81': '5.81rem',
+              '2': '0.125rem',
+              }
+            }
+          }
+        }   
+      </script>
+</head>
+<body class="flex justify-center items-center h-screen bg-bodycolor " >
+  <main class="bg-dark1 w-[22rem] h-[37rem] rounded-2xl drop-shadow-xl">
+
+
+
+    <div class="image ">
+      <img class=" rounded-2xl h-[19rem] w-[19rem] place-content-center cursor-pointer drop-shadow-md m-[1.5rem] hover:opacity-50" src="images/image-equilibrium.jpg" alt="Qr_Code_Image"> 
+    </div>
+    <div class="Equilibrium ">
+      <h1 class="text-white hover:text-lightBlue font-bold ml-[1.5rem] cursor-pointer">Equilibrium #3429</h1>
+    </div>
+    <div class="paragraph">
+      <p class="w-[18.8rem] h-[3.25rem] text-blue2 ml-[1.5rem] mt-[1rem] " >Our Equilibrium collection promotes balance and calm.</p>
+    </div>
+
+
+
+    <div class="ether-clock flex block mt-[1.5rem]">
+
+      <div class="etheriumIcon ml-[1.5rem] cursor-pointer ">
+        <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+      </div>
+      <div class="etherNumber">
+        <p class="w-[4.65rem] h-[1.25rem] text-lightBlue  ml-[0.62rem] cursor-pointer">0.041 ETH</p>
+      </div>
+      <div class="clockimg ml-[7.0rem] cursor-pointer">
+        <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+      </div>
+      
+      <div class="timeleft">
+        <p class="h-[1.25rem] w-[4.56rem] text-soft ml-[0.62rem] cursor-pointer">3 days left</p>
+      </div>
+    </div>  
+    
+    
+    <div class="line mt-[1.25rem] w-[19rem] ">
+      <hr class="ml-[2.5rem] text-linecolor">
+    </div>
+
+    <div class="bottom flex block mt-[1rem] ml-[1.25rem]">
+      <div class="faceicon">
+        <img class="h-[2.06rem] w-[2.06rem] border-[0.125rem] border-inherit hover:border-lightBlue rounded-full" src="images/image-avatar.png" alt="face_icon">
+      </div>
+
+      <div class="creation ml-[1rem]">
+        <p class="h-[1.2rem] w-[5.06rem] text-soft">Creation of</p>
+      </div>
+      <div class="author ml-[1rem]">
+        <p class="h-[1.25rem] w-[5.81rem] text-white hover:text-lightBlue cursor-pointer">Jules Wyvern</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
+
